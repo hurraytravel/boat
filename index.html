@@ -622,15 +622,31 @@ html {
   .packraft-path:hover { cursor: pointer; }
   @keyframes blink-stroke { 0%, 100% { stroke-opacity: 1 } 50% { stroke-opacity: 0.35 } }
   .selected { animation: blink-stroke 1s infinite ease-in-out; }
+
+  .layout { display: flex; gap: 24px; align-items: flex-start; }
+  .panel { min-width: 320px; }
+  .boat-svg { max-width: 100%; height: auto; }
+
+  @media (max-width: 640px) {
+    .layout { flex-direction: column; gap: 16px; }
+    .panel { min-width: auto; width: 100%; }
+    .boat-svg { width: 100% !important; height: auto !important; }
+    .p-8 { padding: 1rem; }
+    .mb-6 { margin-bottom: 1rem; }
+    .text-sm { font-size: 0.8125rem; line-height: 1.2rem; }
+    .model-buttons { display: flex; gap: 8px; justify-content: center; }
+    .model-buttons button { flex: 1; }
+  }
   </style>
 </head>
 <body>
   <div class="min-h-screen bg-gray-100 flex items-center justify-center p-8">
-    <div class="bg-white p-8 rounded-lg shadow-lg" style="display:flex;gap:24px;align-items:flex-start">
+    <div class="bg-white p-8 rounded-lg shadow-lg layout">
       <div>
         <h1 class="text-center mb-6">边界背包船 - 配色选择</h1>
+        <p class="text-center text-sm text-gray-600 mb-6">先点选船身的块，再点选颜色</p>
         <div id="boat1" aria-hidden="false">
-          <svg width="540" height="800" viewBox="0 0 540 1020" xmlns="http://www.w3.org/2000/svg" class="border border-gray-300">
+          <svg width="540" height="800" viewBox="0 0 540 1020" xmlns="http://www.w3.org/2000/svg" class="border border-gray-300 boat-svg">
             <path id="boat1-block-1" data-boat="boat1" data-block="1" d="M 270 60 L 165 220 L 240 280 L 270 280 L 270 60 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="220" y="210" text-anchor="middle" font-size="24">1</text>
             <text id="alias-boat1-1" x="220" y="240" text-anchor="middle" font-size="24"></text>
@@ -675,7 +691,7 @@ html {
           </svg>
         </div>
         <div id="boat2" aria-hidden="true" style="display:none">
-          <svg width="540" height="800" viewBox="0 0 540 1020" xmlns="http://www.w3.org/2000/svg" class="border border-gray-300">
+          <svg width="540" height="800" viewBox="0 0 540 1020" xmlns="http://www.w3.org/2000/svg" class="border border-gray-300 boat-svg">
             <path id="boat2-block-1" data-boat="boat2" data-block="1" d="M 230 20 Q 210 140 150 250 L 240 340 L 230 20 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="210" y="190" text-anchor="middle" font-size="24">1</text>
             <text id="alias-boat2-1" x="210" y="215" text-anchor="middle" font-size="24"></text>
@@ -724,10 +740,10 @@ html {
           </svg>
         </div>
       </div>
-      <div style="min-width:320px">
+      <div class="panel">
         <div class="mb-6">
           <h2 class="text-center mb-6">选择模型</h2>
-          <div style="display:flex;gap:8;justify-content:center">
+          <div class="model-buttons" style="display:flex;gap:8;justify-content:center">
             <button class="border rounded-lg p-8" id="boat1-btn">背包船1</button>
             <button class="border rounded-lg p-8" id="boat2-btn">背包船2</button>
           </div>
