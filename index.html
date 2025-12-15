@@ -626,6 +626,8 @@ html {
   .layout { display: flex; gap: 24px; align-items: flex-start; }
   .panel { min-width: 320px; }
   .boat-svg { max-width: 100%; height: auto; }
+  .model-buttons { display: flex; gap: 12px; justify-content: center; }
+  .model-buttons button { padding: calc(var(--spacing) * 5.333333); }
 
   @media (max-width: 640px) {
     .layout { flex-direction: column; gap: 16px; }
@@ -634,8 +636,8 @@ html {
     .p-8 { padding: 1rem; }
     .mb-6 { margin-bottom: 1rem; }
     .text-sm { font-size: 0.8125rem; line-height: 1.2rem; }
-    .model-buttons { display: flex; gap: 8px; justify-content: center; }
-    .model-buttons button { flex: 1; }
+    .model-buttons { display: flex; gap: 12px; justify-content: center; }
+    .model-buttons button { flex: 1; padding: calc(var(--spacing) * 3.333333); }
   }
   </style>
 </head>
@@ -645,96 +647,190 @@ html {
       <div>
         <h1 class="text-center mb-6">边界背包船 - 配色选择</h1>
         <p class="text-center text-sm text-gray-600 mb-6">先点选船身的块，再点选颜色</p>
-        <div id="boat1" aria-hidden="false">
+        <div id="cook210D" aria-hidden="false">
           <svg width="540" height="800" viewBox="0 0 540 1020" xmlns="http://www.w3.org/2000/svg" class="border border-gray-300 boat-svg">
-            <path id="boat1-block-1" data-boat="boat1" data-block="1" d="M 270 60 L 165 220 L 240 280 L 270 280 L 270 60 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="cook210D-block-1" data-boat="cook210D" data-block="1" d="M 270 60 L 165 220 L 240 280 L 270 280 L 270 60 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="220" y="210" text-anchor="middle" font-size="24">1</text>
-            <text id="alias-boat1-1" x="220" y="240" text-anchor="middle" font-size="24"></text>
+            <text id="alias-cook210D-1" x="220" y="240" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat1-block-2" data-boat="boat1" data-block="2" d="M 270 60 L 270 280 L 300 280 L 375 220 L 270 60 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="cook210D-block-2" data-boat="cook210D" data-block="2" d="M 270 60 L 270 280 L 300 280 L 375 220 L 270 60 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="320" y="210" text-anchor="middle" font-size="24">2</text>
-            <text id="alias-boat1-2" x="320" y="240" text-anchor="middle" font-size="24"></text>
+            <text id="alias-cook210D-2" x="320" y="240" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat1-block-3" data-boat="boat1" data-block="3" d="M 165 220 L 115 340 L 215 360 L 240 280 L 165 220 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="cook210D-block-3" data-boat="cook210D" data-block="3" d="M 165 220 L 115 340 L 215 360 L 240 280 L 165 220 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="175" y="305" text-anchor="middle" font-size="24">3</text>
-            <text id="alias-boat1-3" x="175" y="335" text-anchor="middle" font-size="24"></text>
+            <text id="alias-cook210D-3" x="175" y="335" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat1-block-4" data-boat="boat1" data-block="4" d="M 375 220 L 300 280 L 325 360 L 425 340 L 375 220 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="cook210D-block-4" data-boat="cook210D" data-block="4" d="M 375 220 L 300 280 L 325 360 L 425 340 L 375 220 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="365" y="305" text-anchor="middle" font-size="24">4</text>
-            <text id="alias-boat1-4" x="365" y="335" text-anchor="middle" font-size="24"></text>
+            <text id="alias-cook210D-4" x="365" y="335" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat1-block-5" data-boat="boat1" data-block="5" d="M 115 340 L 115 755 L 215 755 L 215 360 L 115 340 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="cook210D-block-5" data-boat="cook210D" data-block="5" d="M 115 340 L 115 755 L 215 755 L 215 360 L 115 340 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="155" y="520" text-anchor="middle" font-size="24">5</text>
-            <text id="alias-boat1-5" x="155" y="555" text-anchor="middle" font-size="24"></text>
+            <text id="alias-cook210D-5" x="155" y="555" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat1-block-6" data-boat="boat1" data-block="6" d="M 425 340 L 325 360 L 325 755 L 425 755 L 425 340 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="cook210D-block-6" data-boat="cook210D" data-block="6" d="M 425 340 L 325 360 L 325 755 L 425 755 L 425 340 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="385" y="520" text-anchor="middle" font-size="24">6</text>
-            <text id="alias-boat1-6" x="385" y="555" text-anchor="middle" font-size="24"></text>
+            <text id="alias-cook210D-6" x="385" y="555" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat1-block-7" data-boat="boat1" data-block="7" d="M 173 872 C 140 855 125 805 115 755 L 215 755 L 240 835 L 173 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="cook210D-block-7" data-boat="cook210D" data-block="7" d="M 173 872 C 140 855 125 805 115 755 L 215 755 L 240 835 L 173 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="170" y="810" text-anchor="middle" font-size="24">7</text>
-            <text id="alias-boat1-7" x="170" y="840" text-anchor="middle" font-size="24"></text>
+            <text id="alias-cook210D-7" x="170" y="840" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat1-block-8" data-boat="boat1" data-block="8" d="M 367 872 C 400 855 415 805 425 755 L 325 755 L 300 835 L 367 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="cook210D-block-8" data-boat="cook210D" data-block="8" d="M 367 872 C 400 855 415 805 425 755 L 325 755 L 300 835 L 367 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="370" y="810" text-anchor="middle" font-size="24">8</text>
-            <text id="alias-boat1-8" x="370" y="840" text-anchor="middle" font-size="24"></text>
+            <text id="alias-cook210D-8" x="370" y="840" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat1-block-9" data-boat="boat1" data-block="9" d="M 173 872 L 240 835 L 270 835 L 270 960 C 245 945 210 910 185 885 C 175 877 173 874 173 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="cook210D-block-9" data-boat="cook210D" data-block="9" d="M 173 872 L 240 835 L 270 835 L 270 960 C 245 945 210 910 185 885 C 175 877 173 874 173 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="220" y="895" text-anchor="middle" font-size="24">9</text>
-            <text id="alias-boat1-9" x="220" y="925" text-anchor="middle" font-size="24"></text>
+            <text id="alias-cook210D-9" x="220" y="925" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat1-block-10" data-boat="boat1" data-block="10" d="M 367 872 L 300 835 L 270 835 L 270 960 C 295 945 330 910 355 885 C 365 877 367 874 367 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="cook210D-block-10" data-boat="cook210D" data-block="10" d="M 367 872 L 300 835 L 270 835 L 270 960 C 295 945 330 910 355 885 C 365 877 367 874 367 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="320" y="895" text-anchor="middle" font-size="24">10</text>
-            <text id="alias-boat1-10" x="320" y="925" text-anchor="middle" font-size="24"></text>
+            <text id="alias-cook210D-10" x="320" y="925" text-anchor="middle" font-size="24"></text>
 
             <path d="M 270 280 L 240 280 L 215 360 L 215 755 L 240 835 L 270 835 L 300 835 L 325 755 L 325 360 L 300 280 L 270 280 Z" fill="black" stroke="black" stroke-width="8" stroke-linejoin="round" />
           </svg>
         </div>
-        <div id="boat2" aria-hidden="true" style="display:none">
+        <div id="cook420D" aria-hidden="true" style="display:none">
           <svg width="540" height="800" viewBox="0 0 540 1020" xmlns="http://www.w3.org/2000/svg" class="border border-gray-300 boat-svg">
-            <path id="boat2-block-1" data-boat="boat2" data-block="1" d="M 230 20 Q 210 140 150 250 L 240 340 L 230 20 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="cook420D-block-1" data-boat="cook420D" data-block="1" d="M 270 60 L 165 220 L 240 280 L 270 280 L 270 60 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="220" y="210" text-anchor="middle" font-size="24">1</text>
+            <text id="alias-cook420D-1" x="220" y="240" text-anchor="middle" font-size="24"></text>
+
+            <path id="cook420D-block-2" data-boat="cook420D" data-block="2" d="M 270 60 L 270 280 L 300 280 L 375 220 L 270 60 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="320" y="210" text-anchor="middle" font-size="24">2</text>
+            <text id="alias-cook420D-2" x="320" y="240" text-anchor="middle" font-size="24"></text>
+
+            <path id="cook420D-block-3" data-boat="cook420D" data-block="3" d="M 165 220 L 115 340 L 215 360 L 240 280 L 165 220 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="175" y="305" text-anchor="middle" font-size="24">3</text>
+            <text id="alias-cook420D-3" x="175" y="335" text-anchor="middle" font-size="24"></text>
+
+            <path id="cook420D-block-4" data-boat="cook420D" data-block="4" d="M 375 220 L 300 280 L 325 360 L 425 340 L 375 220 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="365" y="305" text-anchor="middle" font-size="24">4</text>
+            <text id="alias-cook420D-4" x="365" y="335" text-anchor="middle" font-size="24"></text>
+
+            <path id="cook420D-block-5" data-boat="cook420D" data-block="5" d="M 115 340 L 115 755 L 215 755 L 215 360 L 115 340 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="155" y="520" text-anchor="middle" font-size="24">5</text>
+            <text id="alias-cook420D-5" x="155" y="555" text-anchor="middle" font-size="24"></text>
+
+            <path id="cook420D-block-6" data-boat="cook420D" data-block="6" d="M 425 340 L 325 360 L 325 755 L 425 755 L 425 340 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="385" y="520" text-anchor="middle" font-size="24">6</text>
+            <text id="alias-cook420D-6" x="385" y="555" text-anchor="middle" font-size="24"></text>
+
+            <path id="cook420D-block-7" data-boat="cook420D" data-block="7" d="M 173 872 C 140 855 125 805 115 755 L 215 755 L 240 835 L 173 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="170" y="810" text-anchor="middle" font-size="24">7</text>
+            <text id="alias-cook420D-7" x="170" y="840" text-anchor="middle" font-size="24"></text>
+
+            <path id="cook420D-block-8" data-boat="cook420D" data-block="8" d="M 367 872 C 400 855 415 805 425 755 L 325 755 L 300 835 L 367 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="370" y="810" text-anchor="middle" font-size="24">8</text>
+            <text id="alias-cook420D-8" x="370" y="840" text-anchor="middle" font-size="24"></text>
+
+            <path id="cook420D-block-9" data-boat="cook420D" data-block="9" d="M 173 872 L 240 835 L 270 835 L 270 960 C 245 945 210 910 185 885 C 175 877 173 874 173 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="220" y="895" text-anchor="middle" font-size="24">9</text>
+            <text id="alias-cook420D-9" x="220" y="925" text-anchor="middle" font-size="24"></text>
+
+            <path id="cook420D-block-10" data-boat="cook420D" data-block="10" d="M 367 872 L 300 835 L 270 835 L 270 960 C 295 945 330 910 355 885 C 365 877 367 874 367 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="320" y="895" text-anchor="middle" font-size="24">10</text>
+            <text id="alias-cook420D-10" x="320" y="925" text-anchor="middle" font-size="24"></text>
+
+            <path d="M 270 280 L 240 280 L 215 360 L 215 755 L 240 835 L 270 835 L 300 835 L 325 755 L 325 360 L 300 280 L 270 280 Z" fill="black" stroke="black" stroke-width="8" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div id="Erden210D" aria-hidden="true" style="display:none">
+          <svg width="540" height="800" viewBox="0 0 540 1020" xmlns="http://www.w3.org/2000/svg" class="border border-gray-300 boat-svg">
+            <path id="Erden210D-block-1" data-boat="Erden210D" data-block="1" d="M 230 20 Q 210 140 150 250 L 240 340 L 230 20 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="210" y="190" text-anchor="middle" font-size="24">1</text>
-            <text id="alias-boat2-1" x="210" y="215" text-anchor="middle" font-size="24"></text>
+            <text id="alias-Erden210D-1" x="210" y="215" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat2-block-2" data-boat="boat2" data-block="2" d="M 230 20 L 240 280 L 300 280 L 310 20 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="Erden210D-block-2" data-boat="Erden210D" data-block="2" d="M 230 20 L 240 280 L 300 280 L 310 20 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="270" y="200" text-anchor="middle" font-size="24">2</text>
-            <text id="alias-boat2-2" x="270" y="225" text-anchor="middle" font-size="24"></text>
+            <text id="alias-Erden210D-2" x="270" y="225" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat2-block-3" data-boat="boat2" data-block="3" d="M 310 20 Q 330 140 390 250 L 300 340 L 310 20 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="Erden210D-block-3" data-boat="Erden210D" data-block="3" d="M 310 20 Q 330 140 390 250 L 300 340 L 310 20 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="330" y="190" text-anchor="middle" font-size="24">3</text>
-            <text id="alias-boat2-3" x="330" y="215" text-anchor="middle" font-size="24"></text>
+            <text id="alias-Erden210D-3" x="330" y="215" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat2-block-4" data-boat="boat2" data-block="4" d="M 150 250 L 115 340 L 215 360 L 240 340 L 150 250 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="Erden210D-block-4" data-boat="Erden210D" data-block="4" d="M 150 250 L 115 340 L 215 360 L 240 340 L 150 250 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="175" y="305" text-anchor="middle" font-size="24">4</text>
-            <text id="alias-boat2-4" x="175" y="330" text-anchor="middle" font-size="24"></text>
+            <text id="alias-Erden210D-4" x="175" y="330" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat2-block-5" data-boat="boat2" data-block="5" d="M 390 250 L 300 340 L 325 360 L 425 340 L 390 250 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="Erden210D-block-5" data-boat="Erden210D" data-block="5" d="M 390 250 L 300 340 L 325 360 L 425 340 L 390 250 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="365" y="305" text-anchor="middle" font-size="24">5</text>
-            <text id="alias-boat2-5" x="365" y="330" text-anchor="middle" font-size="24"></text>
+            <text id="alias-Erden210D-5" x="365" y="330" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat2-block-6" data-boat="boat2" data-block="6" d="M 115 340 L 115 755 L 215 755 L 215 360 L 115 340 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="Erden210D-block-6" data-boat="Erden210D" data-block="6" d="M 115 340 L 115 755 L 215 755 L 215 360 L 115 340 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="155" y="520" text-anchor="middle" font-size="24">6</text>
-            <text id="alias-boat2-6" x="155" y="555" text-anchor="middle" font-size="24"></text>
+            <text id="alias-Erden210D-6" x="155" y="555" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat2-block-7" data-boat="boat2" data-block="7" d="M 425 340 L 325 360 L 325 755 L 425 755 L 425 340 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="Erden210D-block-7" data-boat="Erden210D" data-block="7" d="M 425 340 L 325 360 L 325 755 L 425 755 L 425 340 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="385" y="520" text-anchor="middle" font-size="24">7</text>
-            <text id="alias-boat2-7" x="385" y="555" text-anchor="middle" font-size="24"></text>
+            <text id="alias-Erden210D-7" x="385" y="555" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat2-block-8" data-boat="boat2" data-block="8" d="M 173 872 C 140 855 125 805 115 755 L 215 755 L 240 835 L 173 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="Erden210D-block-8" data-boat="Erden210D" data-block="8" d="M 173 872 C 140 855 125 805 115 755 L 215 755 L 240 835 L 173 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="170" y="810" text-anchor="middle" font-size="24">8</text>
-            <text id="alias-boat2-8" x="170" y="835" text-anchor="middle" font-size="24"></text>
+            <text id="alias-Erden210D-8" x="170" y="835" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat2-block-9" data-boat="boat2" data-block="9" d="M 367 872 C 400 855 415 805 425 755 L 325 755 L 300 835 L 367 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="Erden210D-block-9" data-boat="Erden210D" data-block="9" d="M 367 872 C 400 855 415 805 425 755 L 325 755 L 300 835 L 367 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="370" y="810" text-anchor="middle" font-size="24">9</text>
-            <text id="alias-boat2-9" x="370" y="835" text-anchor="middle" font-size="24"></text>
+            <text id="alias-Erden210D-9" x="370" y="835" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat2-block-10" data-boat="boat2" data-block="10" d="M 173 872 L 240 835 L 270 835 L 270 960 C 245 945 210 910 185 885 C 175 877 173 874 173 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="Erden210D-block-10" data-boat="Erden210D" data-block="10" d="M 173 872 L 240 835 L 270 835 L 270 960 C 245 945 210 910 185 885 C 175 877 173 874 173 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="220" y="895" text-anchor="middle" font-size="24">10</text>
-            <text id="alias-boat2-10" x="220" y="920" text-anchor="middle" font-size="24"></text>
+            <text id="alias-Erden210D-10" x="220" y="920" text-anchor="middle" font-size="24"></text>
 
-            <path id="boat2-block-11" data-boat="boat2" data-block="11" d="M 367 872 L 300 835 L 270 835 L 270 960 C 295 945 330 910 355 885 C 365 877 367 874 367 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <path id="Erden210D-block-11" data-boat="Erden210D" data-block="11" d="M 367 872 L 300 835 L 270 835 L 270 960 C 295 945 330 910 355 885 C 365 877 367 874 367 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
             <text x="320" y="895" text-anchor="middle" font-size="24">11</text>
-            <text id="alias-boat2-11" x="320" y="920" text-anchor="middle" font-size="24"></text>
+            <text id="alias-Erden210D-11" x="320" y="920" text-anchor="middle" font-size="24"></text>
+
+            <path d="M 270 280 L 240 280 L 215 360 L 215 755 L 240 835 L 270 835 L 300 835 L 325 755 L 325 360 L 300 280 L 270 280 Z" fill="black" stroke="black" stroke-width="8" stroke-linejoin="round" />
+          </svg>
+        </div>
+        <div id="Erden420D" aria-hidden="true" style="display:none">
+          <svg width="540" height="800" viewBox="0 0 540 1020" xmlns="http://www.w3.org/2000/svg" class="border border-gray-300 boat-svg">
+            <path id="Erden420D-block-1" data-boat="Erden420D" data-block="1" d="M 230 20 Q 210 140 150 250 L 240 340 L 230 20 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="210" y="190" text-anchor="middle" font-size="24">1</text>
+            <text id="alias-Erden420D-1" x="210" y="215" text-anchor="middle" font-size="24"></text>
+
+            <path id="Erden420D-block-2" data-boat="Erden420D" data-block="2" d="M 230 20 L 240 280 L 300 280 L 310 20 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="270" y="200" text-anchor="middle" font-size="24">2</text>
+            <text id="alias-Erden420D-2" x="270" y="225" text-anchor="middle" font-size="24"></text>
+
+            <path id="Erden420D-block-3" data-boat="Erden420D" data-block="3" d="M 310 20 Q 330 140 390 250 L 300 340 L 310 20 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="330" y="190" text-anchor="middle" font-size="24">3</text>
+            <text id="alias-Erden420D-3" x="330" y="215" text-anchor="middle" font-size="24"></text>
+
+            <path id="Erden420D-block-4" data-boat="Erden420D" data-block="4" d="M 150 250 L 115 340 L 215 360 L 240 340 L 150 250 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="175" y="305" text-anchor="middle" font-size="24">4</text>
+            <text id="alias-Erden420D-4" x="175" y="330" text-anchor="middle" font-size="24"></text>
+
+            <path id="Erden420D-block-5" data-boat="Erden420D" data-block="5" d="M 390 250 L 300 340 L 325 360 L 425 340 L 390 250 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="365" y="305" text-anchor="middle" font-size="24">5</text>
+            <text id="alias-Erden420D-5" x="365" y="330" text-anchor="middle" font-size="24"></text>
+
+            <path id="Erden420D-block-6" data-boat="Erden420D" data-block="6" d="M 115 340 L 115 755 L 215 755 L 215 360 L 115 340 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="155" y="520" text-anchor="middle" font-size="24">6</text>
+            <text id="alias-Erden420D-6" x="155" y="555" text-anchor="middle" font-size="24"></text>
+
+            <path id="Erden420D-block-7" data-boat="Erden420D" data-block="7" d="M 425 340 L 325 360 L 325 755 L 425 755 L 425 340 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="385" y="520" text-anchor="middle" font-size="24">7</text>
+            <text id="alias-Erden420D-7" x="385" y="555" text-anchor="middle" font-size="24"></text>
+
+            <path id="Erden420D-block-8" data-boat="Erden420D" data-block="8" d="M 173 872 C 140 855 125 805 115 755 L 215 755 L 240 835 L 173 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="170" y="810" text-anchor="middle" font-size="24">8</text>
+            <text id="alias-Erden420D-8" x="170" y="835" text-anchor="middle" font-size="24"></text>
+
+            <path id="Erden420D-block-9" data-boat="Erden420D" data-block="9" d="M 367 872 C 400 855 415 805 425 755 L 325 755 L 300 835 L 367 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="370" y="810" text-anchor="middle" font-size="24">9</text>
+            <text id="alias-Erden420D-9" x="370" y="835" text-anchor="middle" font-size="24"></text>
+
+            <path id="Erden420D-block-10" data-boat="Erden420D" data-block="10" d="M 173 872 L 240 835 L 270 835 L 270 960 C 245 945 210 910 185 885 C 175 877 173 874 173 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="220" y="895" text-anchor="middle" font-size="24">10</text>
+            <text id="alias-Erden420D-10" x="220" y="920" text-anchor="middle" font-size="24"></text>
+
+            <path id="Erden420D-block-11" data-boat="Erden420D" data-block="11" d="M 367 872 L 300 835 L 270 835 L 270 960 C 295 945 330 910 355 885 C 365 877 367 874 367 872 Z" fill="white" stroke="black" stroke-width="8" stroke-linejoin="round" class="packraft-path" />
+            <text x="320" y="895" text-anchor="middle" font-size="24">11</text>
+            <text id="alias-Erden420D-11" x="320" y="920" text-anchor="middle" font-size="24"></text>
 
             <path d="M 270 280 L 240 280 L 215 360 L 215 755 L 240 835 L 270 835 L 300 835 L 325 755 L 325 360 L 300 280 L 270 280 Z" fill="black" stroke="black" stroke-width="8" stroke-linejoin="round" />
           </svg>
@@ -743,9 +839,11 @@ html {
       <div class="panel">
         <div class="mb-6">
           <h2 class="text-center mb-6">选择模型</h2>
-          <div class="model-buttons" style="display:flex;gap:8;justify-content:center">
-            <button class="border rounded-lg p-8" id="boat1-btn">背包船1</button>
-            <button class="border rounded-lg p-8" id="boat2-btn">背包船2</button>
+          <div class="model-buttons" style="display:flex;gap:12px;justify-content:center">
+            <button class="border rounded-lg p-8" id="cook210D-btn">库克210D</button>
+            <button class="border rounded-lg p-8" id="cook420D-btn">库克420D</button>
+            <button class="border rounded-lg p-8" id="Erden210D-btn">埃尔登210D</button>
+            <button class="border rounded-lg p-8" id="Erden420D-btn">埃尔登420D</button>
           </div>
         </div>
         <div>
@@ -758,7 +856,24 @@ html {
 
   <script>
     const BOAT_COLOR_CONFIGS = {
-      boat1: [
+      cook210D: [
+        { hex: "#b2994b", alias: "卡其色" },
+        { hex: "#34cc33", alias: "亮绿色" },
+        { hex: "#5a7844", alias: "军绿色" },
+        { hex: "#264c23", alias: "墨绿色" },
+        { hex: "#767271", alias: "灰色" },
+        { hex: "#632d07", alias: "棕色" },
+        { hex: "#0100cd", alias: "宝蓝色" },
+        { hex: "#000000", alias: "黑色" },
+        { hex: "#ff0000", alias: "正红色" },
+        { hex: "#ff6602", alias: "橙色" },
+        { hex: "#ffff05", alias: "正黄色" },
+        { hex: "#819a1b", alias: "橄榄绿" },
+        { hex: "#02b1f1", alias: "天蓝色" },
+        { hex: "#fff5e2", alias: "浅沙色" },
+        { hex: "#ff59a3", alias: "玫粉色" },
+      ],
+      cook420D: [
         { hex: "#fe6600", alias: "橙红" },
         { hex: "#02b1f1", alias: "天蓝" },
         { hex: "#264c23", alias: "墨绿" },
@@ -768,27 +883,49 @@ html {
         { hex: "#dbdbdb", alias: "浅灰色" },
         { hex: "#fff3ce", alias: "深灰色" }
       ],
-      boat2: [
-        { hex: "#14B8A6", alias: "青绿" },
-        { hex: "#6366F1", alias: "靛蓝" },
-        { hex: "#84CC16", alias: "柠檬" },
-        { hex: "#F59E0B", alias: "琥珀" },
-        { hex: "#F43F5E", alias: "玫红" },
-        { hex: "#06B6D4", alias: "青蓝" },
+      Erden210D: [
+        { hex: "#b2994b", alias: "卡其色" },
+        { hex: "#34cc33", alias: "亮绿色" },
+        { hex: "#5a7844", alias: "军绿色" },
+        { hex: "#264c23", alias: "墨绿色" },
+        { hex: "#767271", alias: "灰色" },
+        { hex: "#632d07", alias: "棕色" },
+        { hex: "#0100cd", alias: "宝蓝色" },
         { hex: "#000000", alias: "黑色" },
-        { hex: "#FFFFFF", alias: "白色" }
+        { hex: "#ff0000", alias: "正红色" },
+        { hex: "#ff6602", alias: "橙色" },
+        { hex: "#ffff05", alias: "正黄色" },
+        { hex: "#819a1b", alias: "橄榄绿" },
+        { hex: "#02b1f1", alias: "天蓝色" },
+        { hex: "#fff5e2", alias: "浅沙色" },
+        { hex: "#ff59a3", alias: "玫粉色" },
+      ]
+      ,
+      Erden420D: [
+        { hex: "#fe6600", alias: "橙红" },
+        { hex: "#02b1f1", alias: "天蓝" },
+        { hex: "#264c23", alias: "墨绿" },
+        { hex: "#cec934", alias: "橄榄黄" },
+        { hex: "#a4aa18", alias: "橄榄绿" },
+        { hex: "#077506", alias: "薄荷绿" },
+        { hex: "#dbdbdb", alias: "浅灰色" },
+        { hex: "#fff3ce", alias: "深灰色" }
       ]
     };
 
-    let selectedBoat = 'boat1';
+    let selectedBoat = 'cook210D';
     let colors = BOAT_COLOR_CONFIGS[selectedBoat].map(c => ({...c}));
     let selectedBlock = null;
     let blockColorHex = {};
 
-    const boat1El = document.getElementById('boat1');
-    const boat2El = document.getElementById('boat2');
-    const boat1Btn = document.getElementById('boat1-btn');
-    const boat2Btn = document.getElementById('boat2-btn');
+    const cook210DEl = document.getElementById('cook210D');
+    const cook420DEl = document.getElementById('cook420D');
+    const Erden210DEl = document.getElementById('Erden210D');
+    const Erden420DEl = document.getElementById('Erden420D');
+    const cook210DBtn = document.getElementById('cook210D-btn');
+    const cook420DBtn = document.getElementById('cook420D-btn');
+    const Erden420Dtn = document.getElementById('Erden210D-btn');
+    const Erden420DBtn = document.getElementById('Erden420D-btn');
     const colorsPanel = document.getElementById('colors-panel');
 
     function getColorByHex(hex){ return colors.find(c => c.hex === hex); }
@@ -865,12 +1002,18 @@ html {
       blockColorHex = {};
       selectedBlock = null;
       
-      boat1El.style.display = boat === 'boat1' ? '' : 'none';
-      boat1El.setAttribute('aria-hidden', boat === 'boat1' ? 'false' : 'true');
-      boat2El.style.display = boat === 'boat2' ? '' : 'none';
-      boat2El.setAttribute('aria-hidden', boat === 'boat2' ? 'false' : 'true');
-      boat1Btn.style.backgroundColor = boat === 'boat1' ? '#e9ebef' : 'transparent';
-      boat2Btn.style.backgroundColor = boat === 'boat2' ? '#e9ebef' : 'transparent';
+      cook210DEl.style.display = boat === 'cook210D' ? '' : 'none';
+      cook210DEl.setAttribute('aria-hidden', boat === 'cook210D' ? 'false' : 'true');
+      cook420DEl.style.display = boat === 'cook420D' ? '' : 'none';
+      cook420DEl.setAttribute('aria-hidden', boat === 'cook420D' ? 'false' : 'true');
+      Erden210DEl.style.display = boat === 'Erden210D' ? '' : 'none';
+      Erden210DEl.setAttribute('aria-hidden', boat === 'Erden210D' ? 'false' : 'true');
+      Erden420DEl.style.display = boat === 'Erden420D' ? '' : 'none';
+      Erden420DEl.setAttribute('aria-hidden', boat === 'Erden420D' ? 'false' : 'true');
+      cook210DBtn.style.backgroundColor = boat === 'cook210D' ? '#e9ebef' : 'transparent';
+      cook420DBtn.style.backgroundColor = boat === 'cook420D' ? '#e9ebef' : 'transparent';
+      Erden420Dtn.style.backgroundColor = boat === 'Erden210D' ? '#e9ebef' : 'transparent';
+      Erden420DBtn.style.backgroundColor = boat === 'Erden420D' ? '#e9ebef' : 'transparent';
       document.querySelectorAll('.packraft-path').forEach(p => { p.setAttribute('fill','white'); p.setAttribute('stroke','black'); p.classList.remove('selected'); });
       document.querySelectorAll('[id^="alias-boat"]').forEach(t => t.textContent='');
       renderColors();
@@ -887,13 +1030,15 @@ html {
       });
     }
 
-    boat1Btn.addEventListener('click', () => showBoat('boat1'));
-    boat2Btn.addEventListener('click', () => showBoat('boat2'));
+    cook210DBtn.addEventListener('click', () => showBoat('cook210D'));
+    cook420DBtn.addEventListener('click', () => showBoat('cook420D'));
+    Erden420Dtn.addEventListener('click', () => showBoat('Erden210D'));
+    Erden420DBtn.addEventListener('click', () => showBoat('Erden420D'));
     
 
     attachBlockHandlers();
     renderColors();
-    showBoat('boat1');
+    showBoat('cook210D');
   </script>
 </body>
 </html>
